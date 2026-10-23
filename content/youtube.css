@@ -1,0 +1,14 @@
+#brave-sleep-mode-btn {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/icons/lion-sleep-32.png');
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  padding-left: 38px;
+  background-position-x: 8px;
+  background-position-y: 4px;
+  background-color: #4f30ab;
+  color: #f0f0f0;
+}
+
+#brave-sleep-mode-btn.asleep {
+  background-color: #A0A1B2;
+}

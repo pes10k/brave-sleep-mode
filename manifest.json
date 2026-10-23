@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Brave: Sleep Mode",
+  "icons": {
+    "128": "icons/lion-sleep-128.png"
+  },
+  "version": "0.0.1",
+  "description": "Brave optimized for the remaining 8 hours in the day.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "css": ["content/youtube.css"],
+      "js": ["content/youtube.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/lion-sleep-32.png"
+      ],
+      "matches": [
+        "https://*.youtube.com/*"
+      ]
+    }
+  ]
+}

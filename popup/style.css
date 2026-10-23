@@ -1,0 +1,23 @@
+body {
+    background-color: #343546;
+    width: 320px;
+    text-align: center;
+    margin: 0px;
+}
+
+section {
+    background-color: #4f30ab;
+    border-radius: 30px;
+    width: 280px;
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+h3 {
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
